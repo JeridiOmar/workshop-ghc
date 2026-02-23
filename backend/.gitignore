@@ -1,0 +1,53 @@
+## Build output
+bin/
+obj/
+publish/
+
+## User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Visual Studio
+.vs/
+.vscode/
+
+## Rider
+.idea/
+
+## User secrets
+secrets.json
+
+## Test results
+TestResults/
+*.trx
+*.coverage
+
+## NuGet
+*.nupkg
+*.snupkg
+packages/
+
+## Development certificates
+*.pfx
+*.cer
+
+## Logs
+logs/
+*.log
+
+## Environment files
+.env
+.env.local
+.env.production
+
+## Database
+*.db
+*.db-shm
+*.db-wal
+
+## OS files
+.DS_Store
+Thumbs.db

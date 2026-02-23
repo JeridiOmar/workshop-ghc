@@ -1,0 +1,59 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Pomodoro Api",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/backend/PomodoroTimer.Api/bin/Debug/net9.0/PomodoroTimer.Api.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/backend/PomodoroTimer.Api",
+      "stopAtEntry": false,
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "sourceFileMap": {
+        "/Views": "${workspaceFolder}/backend/PomodoroTimer.Api/Views"
+      },
+      "launchBrowser": {
+        "enabled": true,
+        "args": "http://localhost:5173/swagger",
+        "windows": {
+          "command": "cmd.exe",
+          "args": "/C start http://localhost:5173/swagger"
+        },
+        "osx": {
+          "command": "open"
+        },
+        "linux": {
+          "command": "xdg-open"
+        }
+      }
+    },
+      {
+        "type": "node-terminal",
+        "name": "Pomodoro Frontend: Dev Server",
+        "request": "launch",
+        "command": "npm run dev",
+        "cwd": "${workspaceFolder}/frontend"
+      },
+      {
+      "type": "chrome",
+        "request": "launch",
+        "name": "Pomodoro Frontend: Chrome Debug",
+        "url": "http://localhost:5000",
+        "webRoot": "${workspaceFolder}/frontend/src",
+        "cwd": "${workspaceFolder}/frontend"
+      }
+  ],
+  "compounds": [
+    {
+      "name": "Pomodoro Frontend: Full Debug",
+      "configurations": [
+        "Pomodoro Frontend: Dev Server",
+        "Pomodoro Frontend: Chrome Debug"
+      ]
+    }
+  ]
+}
