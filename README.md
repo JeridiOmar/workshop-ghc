@@ -259,30 +259,6 @@ workshop-ghc/
    git push origin feature/nom-feature
    ```
 
-### Conventions de code
-
-**Backend (C#) :**
-- Utiliser PascalCase pour les classes et méthodes publiques
-- Utiliser camelCase pour les variables locales
-- Respecter les principes SOLID
-- Commenter les logiques complexes
-
-**Frontend (Vue/TypeScript) :**
-- Utiliser camelCase pour les variables et fonctions
-- Utiliser PascalCase pour les noms de composants
-- Prettier pour la mise en forme : `npm run format`
-- ESLint pour les vérifications : `npm run lint`
-
-### Avant de faire un commit
-
-```bash
-# Backend
-cd backend && dotnet build && dotnet test
-
-# Frontend
-cd frontend && npm run lint && npm run test
-```
-
 ### Structure des branches
 
 - `main` - Production (protégée)
@@ -298,15 +274,6 @@ cd frontend && npm run lint && npm run test
 Ce projet est fourni à titre éducatif pour l'atelier **GitHub Copilot Workshop**. 
 
 Tous droits réservés © 2026.
-
----
-
-## 📞 Support et Contact
-
-Pour toute question sur le projet :
-- Consulter la documentation dans `infrastructure/deployment/local/`
-- Vérifier les logs des services en cours d'exécution
-- Vérifier la configuration des variables d'environnement
 
 ---
 
