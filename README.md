@@ -14,19 +14,23 @@
 - 👤 Gérer leur profil utilisateur
 
 **Stack technologique :**
-- **Backend** : ASP.NET Core (.NET 6+) avec Entity Framework Core
-- **Frontend** : Vue 3 + TypeScript + Vite + Tailwind CSS
-- **Base de données** : SQL Server (structure fournie)
-- **Infrastructure** : Déploiement sur Azure
+- **Backend** : ASP.NET Core 9.0 avec Dapper ORM, JWT Bearer, Swashbuckle (Swagger)
+- **Frontend** : Vue 3.5.24 + TypeScript 5.9.3 + Vite 7.2.2 + Tailwind CSS 4.1.17
+- **State Management** : Pinia 3.0.4 + Vue Router 4.6.3
+- **Client HTTP** : Axios 1.13.2
+- **Utilitaires** : dayjs, Radix Vue, VueUse
+- **Base de données** : SQL Server 2019+ avec Microsoft.Data.SqlClient
+- **Sécurité** : JWT Bearer, BCrypt.Net-Next
+- **Infrastructure** : Déploiement sur Azure Static Web Apps
 
 ---
 
 ## 🔧 Guide d'installation des dépendances
 
 ### Prérequis
-- [.NET SDK 6.0+](https://dotnet.microsoft.com/download)
-- [Node.js 16+](https://nodejs.org/) et npm
-- [SQL Server](https://www.microsoft.com/sql-server) (local ou Azure)
+- [.NET SDK 9.0+](https://dotnet.microsoft.com/download)
+- [Node.js 18+](https://nodejs.org/) et npm 9+
+- [SQL Server 2019+](https://www.microsoft.com/sql-server) (local ou Azure)
 - [Git](https://git-scm.com/)
 
 ### Installation backend
